@@ -146,6 +146,5 @@ SIMPLE_JWT = {
     'USER_ID_FIELD': 'email',  
     'USER_ID_CLAIM': 'user_email',  
     'AUTH_HEADER_TYPES': ('Bearer',),
-    # Custom para obtener el email desde el token
     'TOKEN_OBTAIN_SERIALIZER': 'core.serializers.CustomTokenObtainPairSerializer',
 }

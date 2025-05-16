@@ -21,8 +21,6 @@ from core.views import UserRegistrationView, CustomTokenObtainPairView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    #path('api/token/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/register/', UserRegistrationView.as_view(), name='register'),
